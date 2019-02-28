@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python Playground", "Python Playground\Python Playground.pyproj", "{797961DC-DB67-48C8-AB80-8EA3E72D11A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{797961DC-DB67-48C8-AB80-8EA3E72D11A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797961DC-DB67-48C8-AB80-8EA3E72D11A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {857B3669-7932-4485-BE6A-F7E7A3F7FFC5}
+	EndGlobalSection
+EndGlobal
