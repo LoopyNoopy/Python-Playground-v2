@@ -2,18 +2,18 @@ Silhouette Studio Level Testing Document,,,,,,4.2.233,
 Level,Win,Mac,Task,Notes,Ticket No.,Win,Mac
 ,Installing and Activating,,,,,,
 ,Installation,,,,,,
-3,Pass,To Test,Install over Release Version,,,Success,19/03/18 - Win 10 - CT - Success
+3,Pass,Pass,Install over Release Version,,,Success,Success
 2,Pass,Pass,Uninstall previous version,,,Success,Success
-2,To Test,To Test,Delete all preferences,,,,
-2,To Test,To Test,Install latest version,,,dfg,
-2,To Test,To Test,Ensure DMG's are Signed,Mac only,,,
-3,To Test,To Test,Import / Update Library,You'll need to install and create a libray in the previous version.,,,
-2,To Test,To Test,Ensure SRT_Helper / SS_Bluetooth quits after close of SS,,,,
-2,To Test,To Test,Thumbnails,,,,19/03/18 - Win 10 - CT - Success
-,Activation,Fail,,,,,N/
+2,Pass,Pass,Delete all preferences,,,Success,Success
+2,Pass,Pass,Install latest version,,,Success,Success
+2,Pass,Pass,Ensure DMG's are Signed,Mac only,,Success,Success
+3,To Test,Pass,Import / Update Library,You'll need to install and create a libray in the previous version.,,Mac 10.2.6 - DB - Fail,Success
+2,Pass,Pass,Ensure SRT_Helper / SS_Bluetooth quits after close of SS,,,Success,Success
+2,N/A,Pass,Thumbnails,,,N/A,Success
+,Activation,Fail,,,,,
 ,Set 1,Europe,,,,,
 3,To Test,To Test,SSSE to SSDE,SSDE-44DM-A4PP-AN22,,,
-3,To Test,To Test,SSDE to SSAE,SSAE-Z7QP-7NTA-EKSU,,,
+3,Pass,To Test,SSDE to SSAE,SSAE-Z7QP-7NTA-EKSU,,Success,
 3,To Test,To Test,SSAE to SSBE,,,,
 3,To Test,To Test,SSBE to SSSE,,,,
 ,Set 2,,,,,,

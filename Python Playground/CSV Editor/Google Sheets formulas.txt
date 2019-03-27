@@ -8,3 +8,8 @@ Note: Cells need to be exactly what you type I.e. "DB- Success" will default to 
 
 This link checks if a string is in a cell and returns either "TRUE" or "FALSE"
 =ISNUMBER(FIND("Success",INDIRECT("'Level Test'!H{}")))
+
+Level 2 checker
+=AND(INDIRECT("'Level Test'!A5") = 2,ISNUMBER(FIND("Success",INDIRECT("'Level Test'!H5"))))
+
+=IFS(B18=True,"Pass",C18=True,"Fail",D18=True,"N/A",E18=True,"Retest")
