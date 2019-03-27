@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>797961dc-db67-48c8-ab80-8ea3e72d11a8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CSV Editor\Formula Input.py</StartupFile>
+    <StartupFile>CSV Editor\Formula Editor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,13 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CSV Editor\Formula Input.py">
+    <Compile Include="CSV Editor\Formula Editor.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Python_Playground.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CSV Editor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSV Editor\Google Sheets formulas.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

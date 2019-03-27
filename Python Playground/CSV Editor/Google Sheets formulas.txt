@@ -1,0 +1,10 @@
+This line searches the specified cell and is not affected by adding/removing columns
+=if(IFERROR(search("Success",INDIRECT("H{}"))>0,0),"Mac Pass","Mac Fail
+Note: h{} is the cell number
+
+This line is similar to the one above but is able to do multiple arguments
+=Switch(INDIRECT("H13"),"Success","Pass", "Fail","Fail", "N/A","N/A", "To Test")
+Note: Cells need to be exactly what you type I.e. "DB- Success" will default to "To Test"
+
+This link checks if a string is in a cell and returns either "TRUE" or "FALSE"
+=ISNUMBER(FIND("Success",INDIRECT("'Level Test'!H{}")))
