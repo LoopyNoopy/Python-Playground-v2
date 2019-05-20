@@ -13,3 +13,25 @@ Level 2 checker
 =AND(INDIRECT("'Level Test'!A5") = 2,ISNUMBER(FIND("Success",INDIRECT("'Level Test'!H5"))))
 
 =IFS(B18=True,"Pass",C18=True,"Fail",D18=True,"N/A",E18=True,"Retest")
+
+=if(iserror(search("L",INDIRECT("$A5"))),if(not(iserror(search(
+        "Success",$G5))),"Win Pass",if(not(iserror(search(
+        "Fail",$G5))),"Win Fail",if(not(iserror(search(
+        "Success",$I5))),"Win Pass",if(not(iserror(search(
+        "Fail",$I5))),"Win Fail",if(not(iserror(search(
+        "Success",$K5))),"Win Pass",if(not(iserror(search(
+        "Fail",$K5))),"Win Fail",if(not(iserror(search(
+        "Success",$M5))),"Win Pass",if(not(iserror(search(
+        "Fail",$M5))),"Win Fail",if(not(iserror(search(
+        "Success",$O5))),"Win Pass",if(not(iserror(search(
+        "Fail",$O5))),"Win Fail",if(not(iserror(search(
+        "Success",$S5))),"Win Pass",if(not(iserror(search(
+        "Fail",$S5))),"Win Fail",if(not(iserror(search(
+        "Success",$U5))),"Win Pass",if(not(iserror(search(
+        "Fail",$U5))),"Win Fail",if(not(iserror(search(
+        "Success",$W5))),"Win Pass",if(not(iserror(search(
+        "Fail",$W5))),"Win Fail",if(not(iserror(search(
+        "Success",$Y5))),"Win Pass",if(not(iserror(search(
+        "Fail",$Y5))),"Win Fail",if(not(iserror(search(
+        "Success",$AA5))),"Win Pass",if(not(iserror(search(
+        "Fail",$AA5))),"Win Fail","Win RT")))))))))))))))))))),"")
