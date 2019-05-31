@@ -25,6 +25,8 @@ Level 2 checker
         "Fail",$M5))),"Win Fail",if(not(iserror(search(
         "Success",$O5))),"Win Pass",if(not(iserror(search(
         "Fail",$O5))),"Win Fail",if(not(iserror(search(
+        "Success",$Q5))),"Win Pass",if(not(iserror(search(
+        "Fail",$Q5))),"Win Fail",if(not(iserror(search(
         "Success",$S5))),"Win Pass",if(not(iserror(search(
         "Fail",$S5))),"Win Fail",if(not(iserror(search(
         "Success",$U5))),"Win Pass",if(not(iserror(search(
@@ -32,6 +34,4 @@ Level 2 checker
         "Success",$W5))),"Win Pass",if(not(iserror(search(
         "Fail",$W5))),"Win Fail",if(not(iserror(search(
         "Success",$Y5))),"Win Pass",if(not(iserror(search(
-        "Fail",$Y5))),"Win Fail",if(not(iserror(search(
-        "Success",$AA5))),"Win Pass",if(not(iserror(search(
-        "Fail",$AA5))),"Win Fail","Win RT")))))))))))))))))))),"")
+        "Fail",$Y5))),"Win Fail","Win RT")))))))))))))))))))),"")
