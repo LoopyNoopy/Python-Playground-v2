@@ -25,9 +25,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Python_Playground.py" />
+    <Compile Include="Windows notifcation\toast.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CSV Editor\" />
+    <Folder Include="Windows notifcation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSV Editor\Google Sheets formulas.txt" />
