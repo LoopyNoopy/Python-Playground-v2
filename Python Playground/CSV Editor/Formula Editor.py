@@ -67,9 +67,9 @@ def setupLevel2Count():
                 writer.writerow(row)
     return()
 
-def ogFormula(): #Formula for generating the original style rt tests
+def ogFormula(fileName): #Formula for generating the original style rt tests
     count = 1
-    file = open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Original CSV files\\[SS] 4.3 Level Testing Document - Level Test.csv")
+    file = open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Original CSV files\\{}".format(fileName))
     csvFile = list(csv.reader(file))
     file.close()
     for row in tqdm(csvFile):
@@ -77,8 +77,31 @@ def ogFormula(): #Formula for generating the original style rt tests
             row[2] ='=if(iserror(search("L",INDIRECT("$B{0}"))),if(not(iserror(search("Success",INDIRECT("$H{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$H{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$J{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$J{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$L{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$L{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$N{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$N{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$P{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$P{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$R{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$R{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$T{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$T{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$V{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$V{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$X{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$X{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$Z{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$Z{0}")))),"Win Fail","Win RT")))))))))))))))))))),"")'.format(count)
             row[3] ='=if(iserror(search("L",INDIRECT("$B{0}"))),if(not(iserror(search("Success",INDIRECT("$I{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$I{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$K{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$K{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$M{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$M{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$O{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$O{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$Q{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$Q{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$S{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$S{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$U{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$U{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$W{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$W{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$Y{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$Y{0}")))),"Mac Fail",if(not(iserror(search("Success",INDIRECT("$AA{0}")))),"Mac Pass",if(not(iserror(search("Fail",INDIRECT("$AA{0}")))),"Mac Fail","Mac RT")))))))))))))))))))),"")'.format(count)
         count = count+1
-    with open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Updated CSV files\\Updated 4.3 Level Testing Document.csv", "w") as output:
+    with open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Updated CSV files\\Updated {}".format(fileName), "w") as output:
         for row in csvFile:
                 writer = csv.writer(output, lineterminator='\n')
                 writer.writerow(row)
-ogFormula()
+    return()
+
+def ogFormulaPCOnly(fileName):
+    count = 1
+    file = open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Original CSV files\\{}".format(fileName))
+    csvFile = list(csv.reader(file))
+    file.close()
+    for row in tqdm(csvFile):
+        if not row[1].find("L") != -1: #Checks to see its only adding the formula to cells which are tests and not titles
+            row[2] ='=if(iserror(search("L",INDIRECT("$B{0}"))),if(not(iserror(search("Success",INDIRECT("$G{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$G{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$H{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$H{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$I{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$I{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$J{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$J{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$K{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$K{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$L{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$L{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$M{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$M{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$N{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$N{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$O{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$O{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$P{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$P{0}")))),"Win Fail","Win RT")))))))))))))))))))),"")'.format(count)
+        count = count+1
+    with open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Updated CSV files\\Updated {}".format(fileName), "w") as output:
+        for row in csvFile:
+                writer = csv.writer(output, lineterminator='\n')
+                writer.writerow(row)
+    return()
+
+ogFormula("[DLC Connect] Level Testing Document - SC Settings.csv")
+ogFormula("[DLC Connect] Level Testing Document - AI CC 2017.csv")
+ogFormula("[DLC Connect] Level Testing Document - AI CC 2018.csv")
+ogFormula("[DLC Connect] Level Testing Document - AI CC 2019.csv")
+ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2017.csv")
+ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2018.csv")
+ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2019.csv")
