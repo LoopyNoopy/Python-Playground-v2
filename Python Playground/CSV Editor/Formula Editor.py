@@ -98,10 +98,4 @@ def ogFormulaPCOnly(fileName):
                 writer.writerow(row)
     return()
 
-ogFormula("[DLC Connect] Level Testing Document - SC Settings.csv")
-ogFormula("[DLC Connect] Level Testing Document - AI CC 2017.csv")
-ogFormula("[DLC Connect] Level Testing Document - AI CC 2018.csv")
-ogFormula("[DLC Connect] Level Testing Document - AI CC 2019.csv")
-ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2017.csv")
-ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2018.csv")
-ogFormulaPCOnly("[DLC Connect] Level Testing Document - CD 2019.csv")
+ogFormula("[SS] 4.3 Level Testing Document - Level Test.csv")

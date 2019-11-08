@@ -25,16 +25,27 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Python_Playground.py" />
+    <Compile Include="Tkinter\Checkbox Example.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\Python GUI.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter\tk_Checkbutton.py" />
     <Compile Include="Windows notifcation\toast.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CSV Editor\" />
+    <Folder Include="Tkinter\" />
     <Folder Include="Windows notifcation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSV Editor\Google Sheets formulas.txt" />
+    <Content Include="favicon.ico" />
+    <Content Include="Maya.jpg" />
+    <Content Include="Windows notifcation\maya.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
