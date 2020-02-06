@@ -55,6 +55,7 @@
     <Content Include="CSV Editor\Google Sheets formulas.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Maya.jpg" />
+    <Content Include="requirements.txt" />
     <Content Include="Windows notifcation\maya.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
