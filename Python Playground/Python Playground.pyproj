@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>797961dc-db67-48c8-ab80-8ea3e72d11a8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tkinter\File Dialog Box.py</StartupFile>
+    <StartupFile>CSV Editor\Formula Editor.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tkinter\tk_Checkbutton.py" />
+    <Compile Include="Tkinter\UpdateAfter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Windows notifcation\toast.py">
       <SubType>Code</SubType>
     </Compile>
