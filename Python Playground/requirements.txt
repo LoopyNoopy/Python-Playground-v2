@@ -38,3 +38,6 @@ win10toast-persist==0.10.1
 win32core==221.36
 win32gui==221.6
 WMI==1.4.9
+keyboard==0.13.5
+neo4j==4.2.1
+pytz==2021.1

@@ -1,0 +1,9 @@
+CREATE (x:OS{name:"macOS 11.3", is32Bit:"N", is64Bit:"Y",isARM:"Y"})
+
+CREATE (x:Program{name:"Silhouette Studio", version:"4.4.444"})
+
+match
+(a:OS),(b:Program)
+Where a.name = "macOS 11.3" and b.name = "Silhouette Studio"
+create (b)-[r:runsOn]->(a)
+return type(r)
