@@ -84,16 +84,16 @@ def ogFormula(fileName, filePath, directory): #Formula for generating the origin
                 writer.writerow(row)
     return()
 
-def ogFormulaPCOnly(fileName):
+def ogFormulaPCOnly(fileName, filePath, directory):
     count = 1
-    file = open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Original CSV files\\{}".format(fileName))
+    file = open(filePath)
     csvFile = list(csv.reader(file))
     file.close()
     for row in tqdm(csvFile):
         if not row[1].find("L") != -1: #Checks to see its only adding the formula to cells which are tests and not titles
             row[2] ='=if(iserror(search("L",INDIRECT("$B{0}"))),if(not(iserror(search("Success",INDIRECT("$G{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$G{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$H{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$H{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$I{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$I{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$J{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$J{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$K{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$K{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$L{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$L{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$M{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$M{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$N{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$N{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$O{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$O{0}")))),"Win Fail",if(not(iserror(search("Success",INDIRECT("$P{0}")))),"Win Pass",if(not(iserror(search("Fail",INDIRECT("$P{0}")))),"Win Fail","Win RT")))))))))))))))))))),"")'.format(count)
         count = count+1
-    with open("C:\\Users\\dburgess\\Documents\\GitHub\\Python Playground\\Python Playground\\CSV Editor\\Updated CSV files\\Updated {}".format(fileName), "w") as output:
+    with open(directory + "\\Updated {}".format(fileName), "w") as output:
         for row in csvFile:
                 writer = csv.writer(output, lineterminator='\n')
                 writer.writerow(row)
@@ -102,4 +102,7 @@ fileInput = input("Drag file here: ")
 fileInput = fileInput.replace('"',"")
 fileName = fileInput.rsplit('\\', 1)[-1]
 fileDirectory = fileInput.rsplit('\\', 1)[-2]
-ogFormula(fileName,fileInput,fileDirectory)
+if "CD" in fileName:
+    ogFormulaPCOnly(fileName, fileInput, fileDirectory)
+else:
+    ogFormula(fileName,fileInput,fileDirectory)
