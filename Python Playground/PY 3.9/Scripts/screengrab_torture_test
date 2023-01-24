@@ -1,0 +1,5 @@
+#!F:\GitHub\Python-Playground-v2\Python Playground\PY 3.9\Scripts\python.exe
+
+from desktopmagic.scripts.screengrab_torture_test import main
+
+main()
