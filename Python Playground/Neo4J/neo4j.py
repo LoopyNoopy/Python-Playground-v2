@@ -1,9 +1,9 @@
-from neo4j import GraphDatabase
+import neo4j
 
 class HelloWorldExample:
 
     def __init__(self, uri, user, password):
-        self.driver = GraphDatabase.driver(uri, auth=(user, password))
+        self.driver = neo4j.GraphDatabase.driver(uri, auth=(user, password))
 
     def close(self):
         self.driver.close()
